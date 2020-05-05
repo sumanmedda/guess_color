@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOME</title>
+
+    <!-- my css -->
+    <!--*Links*-->
+    <link rel="stylesheet" type="text/css"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    
+    <!-- info part -->
+
+
+    <div class="container">
+        <div class="row">
+            <div class="navbar-brand">GUESS ME</div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row col-md-7 offset-md-4 heading">
+            <h2>THE PALINDROME GAME</h2>
+        </div>
+    </div>
+    <div class="container mainBody" id="infoArea" style="display: block;">
+        <div class="col-md-7 offset-md-3 plr1">
+            <h3 class="offset-md-2 playerInfoHeader">PLAYERS INFORMATION</h3>
+            <label class="define"><strong>Player 1</strong></label>
+            <ul>
+                <li><label>Game Name:</label><input type="text" class="player1Name" id="player1Name" placeholder="Your Game Name"></li>
+                <li><label>Age:</label><input class="player1Age" id="player1Age" type="number" placeholder="Your Age"></li>
+                
+            </ul>
+        </div>
+        <hr>
+        <div class="col-md-7 offset-md-3 plr2">
+            <label class="define"><strong>Player 2</strong></label>
+            <ul>
+               <li><label>Game Name:</label><input class="player2Name" id="player2Name" placeholder="Your Game Name"></li>
+                <li><label>Age:</label><input type="text" class="player2Age" id="player2Age" type="number" placeholder="Your Age"></li>
+                <button id="continueBtn" class="btn">Lets Go Gaming</button>
+            </ul> 
+        </div>
+    </div>
+
+    <!-- gaming Area -->
+
+
+    <div class="container" id="gamingArea" style="display: none;">
+        <div class="row">
+            <div class="col col_main_box">
+                <label class="infoText">PLAYER 1</label>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <img src="img/img_avatar.png" alt="Avatar" style="width:300px;height:300px;">
+                    </div>
+                </div><br>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="img/img_avatar_2.png" alt="Avatar" style="width:300px;height:300px;">
+                        </div>
+                        <div class="flip-card-back" style="width:300px;height:300px;">
+                            <br><br><br><br>
+                                <h1 id="p1Name"></h1>
+                                Points: <ul id="myPoints1"></ul>
+                        </div>
+                    </div>
+                </div>
+                <button type="button" class="btn promptBoxP1" id="promptBoxP1" style="display: block;">PROMPT BOX</button>
+            </div>
+    
+            <div class="col mainInfoBox">
+                <h2 class="description">Description:</h2>
+                <p class="infoText">
+                    This is a <strong>PALINDROME</strong> Game.<br>Each player has to click <strong>PROMPT BOX</strong> button turn by turn,then
+                    a prompt will appear you have to type a word which should be a palindrome if word is palindrome then
+                    player who gave the correct answer will get a point and if player dosent give the correct answer then
+                    thier will be no deduction of point. The player who scores 10 first will be the winner.
+                </p>
+                <button class="btn noteBox">NOTE</button>
+                <br><br>
+                <p class="infoText" style="color: yellowgreen;"><strong>PALINDROME IS A WORD WHICH WHEN REVERSED
+                        REMAINS THE SAME EXAMPLE MADAM IS PALINDROM, BUT HELLO ISN'T AS HELLO WILL RETURN OLLEH</strong></p>
+                <p class="infoText">
+                    If you want to reset everything and start new game click the RESET button below.
+                </p>
+                <button class="btn resetBtn" id="resetData">RESET</button>
+            </div>
+    
+            <div class="col col_main_box">
+                <label class="infoText">PLAYER 2</label>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <img src="img/img_avatar.png" alt="Avatar" style="width:300px;height:300px;">
+                    </div>
+                </div><br>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="img/img_avatar_2.png" alt="Avatar" style="width:300px;height:300px;">
+                        </div>
+                        <div class="flip-card-back" style="width:300px;height:300px;">
+                            <br><br><br><br>
+                                <h1 id="p2Name"></h1>
+                                Points: <ul id="myPoints2"></ul>
+                         </div>
+                    </div>
+                </div>
+                <button type="button" class="btn promptBoxP2" id="promptBoxP2" style="display: none;">PROMPT BOX</button>
+            </div>
+        </div>
+    </div>
+
+        
+    <!--*Scripts*-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

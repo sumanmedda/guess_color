@@ -1,0 +1,188 @@
+.navbar-brand{
+    text-align: center;
+    color: snow;
+    &:hover{
+      color: burlywood;
+    }
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: crimson;
+  transform: rotateY(180deg);
+}
+
+.playerDetails{
+  text-align: center;
+}
+
+.player1Name{
+  margin-left: 9rem;
+}
+
+.player2Name{
+  margin-left: 9rem;
+}
+
+.player1Age{
+  margin-left: 13rem;
+}
+
+.player2Age{
+  margin-left: 13rem;
+}
+
+#player1Male{
+  margin-left: 13rem;
+}
+
+#player2Male{
+  margin-left: 13rem;
+}
+
+
+#continueBtn{
+  text-align: center;
+  margin-left: 8rem;
+  margin-top: 2rem;
+  background-color: black;
+  color: whitesmoke;
+   margin-bottom: 1rem;
+  &:hover{
+    background-color: whitesmoke;
+    color: black;
+    margin-bottom: 1rem;
+  }
+}
+
+.resetBtn{
+  text-align: center;
+  margin-left: 1rem;
+  margin-top: 8rem;
+  background-color: crimson;
+  color: black;
+   margin-bottom: 1rem;
+  &:hover{
+    background-color: greenyellow;
+    color: black;
+    margin-bottom: 1rem;
+  }
+}
+
+.mainBody{
+  background-color:BlanchedAlmond;
+  border-radius: 5rem;
+  
+  margin-top: 2rem;
+  &:hover{
+    background-color: crimson;
+  }
+}
+
+a{
+  text-decoration: none;
+  &:hover{
+    text-decoration: none;
+    color: black;
+  }
+}
+
+.heading{
+  color: seashell;
+  &:hover{
+    color: burlywood;
+  }
+}
+
+.playerInfoHeader{
+  padding-top: 2rem !important;
+}
+
+body{
+  background-image: url('../img/download.jpeg');
+}
+
+.define{
+  color: rgb(0, 0, 0);
+}
+
+.infoText{
+  color: white;
+}
+
+.description{
+  color: white;
+}
+
+.promptBoxP1{
+  background-color: orange;
+  color: black;
+  margin-top: 8rem;
+  margin-left: 4rem;
+  &:hover{
+    background-color: crimson;
+  }
+}
+
+.promptBoxP2{
+  background-color: orange;
+  color: black;
+  margin-top: 8rem;
+  margin-left: 4rem;
+  &:hover{
+    background-color: crimson;
+  }
+}
+
+.noteBox{
+  background-color: orange;
+  color: black;
+  &:hover{
+    background-color: greenyellow;
+  }
+}
+
+.mainInfoBox{
+  text-align: center;
+  margin-top: 5rem;
+}
+
+.col_main_box{
+  margin-top: 3rem;
+}
